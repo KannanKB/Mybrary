@@ -1,0 +1,32 @@
+setting up the entire project by connecting it to a database, setting that up with MVC, and deploying that toa  server on Heroku
+so we can view our application on the web  
+
+step1:
+    Terminal: npm init -y (-y is to default the answer to all the question to yes)
+    This creates the package.json file and in this file, the main is changed to server.js from index.js... doing this just to be in sync with the` video I am watching
+
+step2:
+    Terminal: npm i express ejs express-ejs-layouts 
+    This adds the dependencies in the package.json file and also this cretes a new file 'package-lock.json' and for this there will also be a folder created for node_modules, that has the modules required for these dependencies
+
+Step3: install a developement entity
+    Terminal: npm i --save-dev nodemon
+    when the abouve command is executed in the terminal, the dev dependency is automatically added in the package.json
+    This one will refresh the server automatically when we save the changes made
+
+Step4: in the package.json file, the key in the script is added/ updated to differentiate in starting the productiona dn the dev servers.
+
+Now here we can check if the server is up and on going to the terminal and type npm run devStart, here we will not get anything that is beause there is nothing setup for the routes and the next step is to configure the routes
+Usually in many smaller applications, it may be seen that people put all the routes into the index.js file, but for a larger application it becomes very hard to manage if we have it in the index.js file so we are going to use MVC, to layoout out application and we are going to put all the routes which can could also be called controllers inside of a routes folder
+
+Step5: create a folder named 'routes' under the main column
+just on the name of the folder called routes instead of controllers is because in node.js and express land more popel refer to contollers as routes but here both are the same thing, 
+
+Here we already have the views folder which is where all of the views from the MVC are gonna go and lastly
+
+Step6: create a folder to the route called the modles and this is where all our database models are going to be going
+
+And finally now we have our MVC structure setup and the next step is to create our veryfirst route
+
+
+
